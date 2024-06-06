@@ -13,3 +13,13 @@ document.addEventListener('alpine:init', () => {
 
     }))
 })
+
+document.addEventListener('alpine:init', () => {
+    Alpine.data('experience', () => ({
+        name:"Experience",
+        description:'Explore My',
+        frontend: [{ name: 'HTML', level: 'Experienced' }, { name: 'CSS', level: 'Experienced' }, { name: 'AlpineJS', level: 'Intermediate' }, { name: 'Flutter', level: 'Intermediate' }, { name: 'Bootstrap', level: 'Experienced' }, { name: 'TailwindCSS', level: 'Experienced' }],
+        backend: [{ name: 'Java', level: 'Intermediate' }, { name: 'Spring Boot', level: 'Intermediate' }, { name: 'C++', level: 'Intermediate' }, { name: 'MySql', level: 'Intermediate' }, { name: 'NodeJS', level: 'Experienced' }, { name: 'Javascript', level: 'Experienced' }],
+
+    }))
+})
