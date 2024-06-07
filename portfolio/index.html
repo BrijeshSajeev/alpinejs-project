@@ -176,6 +176,32 @@
         </div>
     </section>
 
+    <section id="projects" class="text-center mb-32 p-6" x-data="projects">
+        <p class="text-base font-semibold text-gray-700" x-text="description"></p>
+        <h1 class="lg:text-5xl text-4xl font-semibold mb-20" x-text="name"></h1>
+
+        <div class="cards md:flex flex-wrap gap-8 align-middle justify-center px-8  rounded-sm">
+            <template x-for="prj in projectList" :key="prj.name">
+         
+                <div class="card  rounded-sm border bg-gray-50  mb-6 shadow-md w-full md:w-2/5 lg:w-1/5">
+                    <div class="image_container mb-6 w-full bg-gray-900 h-48 rounded-t-sm  overflow-hidden">
+                        <img :src="prj.img"  :alt="prj.name"  class="w-full h-full object-cover rounded-t-sm">
+                    </div>
+                    <div class="detail_container mb-6 p-3">
+                        <h1 class="text-2xl font-semibold text-center text-gray-900 mb-6" x-text="prj.name"></h1>
+                        <p class="text-base font-medium text-gray-700 text-justify mb-6" x-text="prj.description"></p>
+                        <div class="mt-4 flex items-center justify-center gap-x-6 text-center">
+                            <a :href="prj.link" 
+                                class="rounded-full px-4 py-3 text-sm font-semibold  text-white bg-black hover:bg-white hover:ring-1 hover:ring-gray-900 hover:text-gray-900 shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-1 cursor-pointer">Learn
+                                More <span>&rarr; </span></a>
+                        </div>
+                    </div>
+                </div>
+                   
+            </template>
+        </div>
+
+    </section>
 
     <script src="./script.js"> </script>
 
