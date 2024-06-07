@@ -23,3 +23,36 @@ document.addEventListener('alpine:init', () => {
 
     }))
 })
+document.addEventListener('alpine:init', () => {
+    Alpine.data('projects', () => ({
+        name:"Projects",
+        description:'Browse My Recent',
+       projectList:[
+        {
+            name:'Natours',
+            description:'Developed Natours, a dynamic and visually appealing web application designed to facilitate the discovery and booking of nature tours',
+            link:'https://github.com/BrijeshSajeev/natours',
+            img:'./assets/tour.jpg'
+        },
+        {
+            name:'Nexter',
+            description:'Developed and maintained the Nexter API, a robust and scalable RESTful API designed to facilitate seamless integration. ',
+            link:'https://github.com/BrijeshSajeev/nexter',
+            img:'./assets/nexter.jpeg'
+        },
+        {
+            name:'Omnifood',
+            description:'Developed Omnifood, a mobile app that delivers personalized meal plans and recipes based on dietary preferences and nutritional needs.',
+            link:'https://omnifood-brijesh.netlify.app/',
+            img:'./assets/omnifood.jpg'
+        },
+        {
+            name:'Mapty',
+            description:'Developed Mapty, a geolocation app for tracking workouts, integrating map APIs, local storage, and user-friendly interface.',
+            link:'https://mapty-brijesh.netlify.app/',
+            img:'./assets/mapty.jpeg'
+        }
+       ]
+
+    }))
+})
