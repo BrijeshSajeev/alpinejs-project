@@ -212,15 +212,17 @@
                 <div class="contacts-info flex justify-center items-center flex-wrap gap-4 px-4 py-4">
                     <div class="contact flex items-center justify-center gap-1">
                         <img src="./assets/email.png" alt="email" class="w-10 h-10">
-                        <a href="mailto:mailtobrijesh2003@gmail.com" target="_blank" >
-                            <span class="text-xl font-medium text-gray-900 hover:text-gray-600 hover:underline transition-transform duration-300 ease-in-out ">mailtobrijesh2003@gmail.com</span>
+                        <a href="mailto:mailtobrijesh2003@gmail.com" target="_blank">
+                            <span
+                                class="text-xl font-medium text-gray-900 hover:text-gray-600 hover:underline transition-transform duration-300 ease-in-out ">mailtobrijesh2003@gmail.com</span>
                         </a>
                     </div>
-        
+
                     <div class="contact flex items-center justify-center gap-2">
                         <img src="./assets/linkedin.png" alt="linkedin" class="w-10 h-10">
-                        <a href="http://linkedin.com/in/brijesh-s-a-053aaa238" target="_blank">  
-                            <span class="text-xl font-medium text-gray-900  hover:text-gray-600 hover:underline transition-transform duration-300 ease-in-out ">
+                        <a href="http://linkedin.com/in/brijesh-s-a-053aaa238" target="_blank">
+                            <span
+                                class="text-xl font-medium text-gray-900  hover:text-gray-600 hover:underline transition-transform duration-300 ease-in-out ">
                                 LinkedIn
                             </span>
                         </a>
@@ -228,8 +230,18 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
+
+    <footer x-data="navigation" class="text-center mb-14">
+        <nav class="flex justify-center items-center flex-wrap gap-4 mb-12">
+            <template x-for="link in links">
+                <a :href="`#${link.toLowerCase()}`"
+                    class="text-2xl font-normal leading-6 text-gray-700 hover:text-gray-950" x-text="link"></a>
+            </template>
+        </nav>
+        <p class="text-gray-700 font-medium text-xs">Copyright © 2023 Brijesh. All Rights Reserved.</p>
+    </footer>
 
     <script src="./script.js"> </script>
 
