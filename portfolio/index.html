@@ -61,8 +61,7 @@
                         <div class="-my-6">
                             <div class="space-y-2 py-6">
                                 <template x-for="link in links">
-                                    <a :href="`#${link.toLowerCase()}`"
-                                        @click="closeMenu()"
+                                    <a :href="`#${link.toLowerCase()}`" @click="closeMenu()"
                                         class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                         x-text="link"></a>
                                 </template>
@@ -126,7 +125,8 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <p class="text-justify lg:p-8">About As a results-oriented software developer with expertise in various
+                    <p class="text-justify lg:p-8">About As a results-oriented software developer with expertise in
+                        various
                         technologies, I specialize
                         in creating innovative solutions that drive business growth and efficiency. With a strong
                         background
@@ -152,10 +152,10 @@
                         <article class="flex w-40 gap-2">
                             <img src="./assets/checkmark.png" alt="Experience icon" class="w-8 h-8">
                             <div>
-                              <h3 class="text-xl font-semibold" x-text="front.name"></h3>
-                              <p class="text-base text-gray-600" x-text="front.level">Experienced</p>
+                                <h3 class="text-xl font-semibold" x-text="front.name"></h3>
+                                <p class="text-base text-gray-600" x-text="front.level">Experienced</p>
                             </div>
-                          </article>
+                        </article>
                     </template>
                 </div>
             </div>
@@ -166,10 +166,10 @@
                         <article class="flex w-40 gap-2">
                             <img src="./assets/checkmark.png" alt="Experience icon" class="w-8 h-8">
                             <div>
-                              <h3 class="text-xl font-semibold" x-text="back.name"></h3>
-                              <p class="text-base text-gray-600" x-text="back.level">Experienced</p>
+                                <h3 class="text-xl font-semibold" x-text="back.name"></h3>
+                                <p class="text-base text-gray-600" x-text="back.level">Experienced</p>
                             </div>
-                          </article>
+                        </article>
                     </template>
                 </div>
             </div>
@@ -182,25 +182,53 @@
 
         <div class="cards md:flex flex-wrap gap-8 align-middle justify-center px-8  rounded-sm">
             <template x-for="prj in projectList" :key="prj.name">
-         
+
                 <div class="card  rounded-sm border bg-gray-50  mb-6 shadow-md w-full md:w-2/5 lg:w-1/5">
                     <div class="image_container mb-6 w-full bg-gray-900 h-48 rounded-t-sm  overflow-hidden">
-                        <img :src="prj.img"  :alt="prj.name"  class="w-full h-full object-cover rounded-t-sm">
+                        <img :src="prj.img" :alt="prj.name" class="w-full h-full object-cover rounded-t-sm">
                     </div>
                     <div class="detail_container mb-6 p-3">
                         <h1 class="text-2xl font-semibold text-center text-gray-900 mb-6" x-text="prj.name"></h1>
                         <p class="text-base font-medium text-gray-700 text-justify mb-6" x-text="prj.description"></p>
                         <div class="mt-4 flex items-center justify-center gap-x-6 text-center">
-                            <a :href="prj.link" 
+                            <a :href="prj.link"
                                 class="rounded-full px-4 py-3 text-sm font-semibold  text-white bg-black hover:bg-white hover:ring-1 hover:ring-gray-900 hover:text-gray-900 shadow-sm transition-transform duration-300 ease-in-out hover:-translate-y-1 cursor-pointer">Learn
                                 More <span>&rarr; </span></a>
                         </div>
                     </div>
                 </div>
-                   
+
             </template>
         </div>
 
+    </section>
+
+    <section id="contact" class="text-center mb-20 p-4">
+        <p class="text-base font-semibold text-gray-700">Get in Touch</p>
+        <h1 class="lg:text-5xl text-4xl font-semibold mb-20">Contact Me</h1>
+
+        <div class="flex justify-center">
+            <div class="contact-container border-2 border-gray-800 rounded-full px-6 py-4 inline-block">
+                <div class="contacts-info flex justify-center items-center flex-wrap gap-4 px-4 py-4">
+                    <div class="contact flex items-center justify-center gap-1">
+                        <img src="./assets/email.png" alt="email" class="w-10 h-10">
+                        <a href="mailto:mailtobrijesh2003@gmail.com" target="_blank" >
+                            <span class="text-xl font-medium text-gray-900 hover:text-gray-600 hover:underline transition-transform duration-300 ease-in-out ">mailtobrijesh2003@gmail.com</span>
+                        </a>
+                    </div>
+        
+                    <div class="contact flex items-center justify-center gap-2">
+                        <img src="./assets/linkedin.png" alt="linkedin" class="w-10 h-10">
+                        <a href="http://linkedin.com/in/brijesh-s-a-053aaa238" target="_blank">  
+                            <span class="text-xl font-medium text-gray-900  hover:text-gray-600 hover:underline transition-transform duration-300 ease-in-out ">
+                                LinkedIn
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </section>
 
     <script src="./script.js"> </script>
