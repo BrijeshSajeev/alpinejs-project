@@ -100,9 +100,20 @@
                 </div>
             </div>
         </div>
+        <div class="next-section lg:absolute bottom-10 right-10 hidden lg:block">
+            <a href="#about">
+                <img src="./assets/arrow.png" alt="" class="w-10 h-10">
+            </a>
+        </div>
+        
     </section>
 
     <section id="about" class="text-center  lg:px-32 mb-32">
+        <div class="next-section lg:absolute -bottom-full right-10 hidden lg:block">
+            <a href="#experience">
+                <img src="./assets/arrow.png" alt="" class="w-10 h-10">
+            </a>
+        </div>
         <p class="text-base font-semibold text-gray-700">Get To Know More</p>
         <h1 class="lg:text-5xl text-4xl font-semibold mb-6">About me</h1>
         <div class="about-container lg:flex justify-center items-center gap-8 h-4/5">
@@ -142,6 +153,11 @@
     </section>
 
     <section id="experience" class="text-center  lg:px-32 mb-28 px-8" x-data="experience">
+        <div class="next-section lg:absolute -bottom-[85rem] right-10 hidden lg:block">
+            <a href="#projects">
+                <img src="./assets/arrow.png" alt="" class="w-10 h-10">
+            </a>
+        </div>
         <p class="text-base font-semibold text-gray-700" x-text="description"></p>
         <h1 class="lg:text-5xl text-4xl font-semibold mb-20" x-text="name"></h1>
         <div class="experience-container lg:flex justify-center items-center gap-4 p-30">
@@ -177,6 +193,11 @@
     </section>
 
     <section id="projects" class="text-center mb-32 p-6" x-data="projects">
+        <div class="next-section lg:absolute -bottom-[132rem] right-10 hidden lg:block">
+            <a href="#contact">
+                <img src="./assets/arrow.png" alt="" class="w-10 h-10">
+            </a>
+        </div>
         <p class="text-base font-semibold text-gray-700" x-text="description"></p>
         <h1 class="lg:text-5xl text-4xl font-semibold mb-20" x-text="name"></h1>
 
