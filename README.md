@@ -13,14 +13,17 @@ Make sure you have the following software installed [Node.js](https://nodejs.org
 ```sh
 brew install node
 ```
+
 - (Windows) use [Chocolatey](https://chocolatey.org/) to install Node.js and npm:
 ```sh
 choco install nodejs
 ```
+
 - (Linux) use your package manager to install Node.js and npm:
 ```sh
 sudo apt install nodejs
 ```
+
 - You can manually download the appropriate installer from the official website: [Download](https://nodejs.org/en/download/)
 
 ### Installing Dependencies
