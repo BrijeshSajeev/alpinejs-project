@@ -132,3 +132,4 @@ document.addEventListener("alpine:init", () => {
     },
   }));
 });
+
